@@ -206,7 +206,7 @@ ul#menu li a:hover
 #content ul
 { margin: 2px 0 22px 0px;}
 
-#content ul li, .sidebar ul li
+div.sidebar_item li
 { list-style-type: none;
   background: url(../IMAGINI/bullet.png) no-repeat;
   margin: 0 0 0 0; 
@@ -215,6 +215,7 @@ ul#menu li a:hover
 
 #footer
 { width: 100%;
+  
   font-family: 'trebuchet ms', sans-serif;
   font-size: 100%;
   height: 80px;
@@ -244,25 +245,88 @@ ul#menu li a:hover
   padding: 4px; 
   font: 100% arial, sans-serif;}
 
-.form_settings
-{ margin: 15px 0 0 0;}
-
-.form_settings p
-{ padding: 0 0 4px 0;}
-
-.form_settings span
-{ float: left; 
-  width: 200px; 
-  text-align: left;}
-
-.form_settings textarea, .form_settings select
-{ font: 100% arial; 
-  width: 299px;}
-
-.form_settings select
-{ width: 310px;}
-
 #drop {background-color: white;}
+
+
+
+div#test, div#test:after, div#test:before {
+  padding:0;
+  margin:0;
+  font-family:Arial;
+}
+
+
+div#test ul {
+  z-index:-1;
+  
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin-top: 100px;
+  list-style:none;
+  width:1020px;
+  height:450px;
+  border-radius:3px;
+  box-shadow:1px 1px 3px 1px;
+  
+}
+
+
+div#test li {
+  position:relative;
+ 
+  width:190px;
+  height:450px;
+  float:left;
+  border-left:1px solid white;
+  -webkit-transition:all 0.7s;
+  transition:all 0.7s;
+  box-shadow:-2px 0 10px 2px;
+}
+
+div#test ul li:first-child {
+  border:none;
+}
+
+div#test span {
+  display:block;
+  position:absolute;
+  bottom:0;
+  width:50%;
+  color:white;
+  white-space:nowrap;
+  padding:20px;
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+div#test > span img {
+  width:800px;
+  height:450px;
+  overflow: hidden;
+}
+
+div#test ul:hover li {
+  width:50px;  
+  overflow: hidden;
+}
+
+
+div#test ul li:hover {
+  width:750px;
+  overflow: hidden;
+}
+
+
+
+
+
+
 
 
 
