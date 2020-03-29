@@ -388,20 +388,26 @@ section#banda p:first-of-type {
 
 
 
+
+@media screen and (min-width:701px) and (max-width: 1148) {
+ ul#menu { float:left; }
+ footer#footer { width:1200px; bottom:0; position:fixed; }
+}
+
+
 @media screen and (max-width: 700px){
   div#banner { display: block;
   margin-left:auto;
   margin-right:auto;
-  width: 90%;
    }
+  body { height: 100%; display: flex; flex-direction:column;}
   ul#menu { margin-left:55px; }
-  footer#footer {width: 100%; bottom:0;}
   h1 { margin-left: 60px; }
   div#content h1 { margin-left:50px; }
   section { margin-left:30px; }
   div.form_settings {margin-left:30px;}
   
   div#sidebar_container { margin-right:31px; }
-  footer#footer { width:880px; }
+  footer#footer { width:880px; bottom:0; position:fixed; }
   footer#footer p { text-align: center; }
 }

@@ -329,6 +329,7 @@ div#test ul li:hover {
   margin-right:auto;
   width: 90%;
    }
+  body { height: 100%; display: flex; flex-direction:column;}
   ul#menu { margin-left:55px; }
   footer#footer {width: 100%;}
   h1 { text-align: center; }

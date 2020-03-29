@@ -65,9 +65,10 @@ a:hover
 
 
 #main
-{ background: #323534 url(../IMAGINI/back.png);
+{ background: #323534 url(../IMAGINI/back.png)repeat-x;
+  
   height: 177px;
-  width: 2100px;
+  width: 100vw;
   top: 0;
   position: fixed; 
 }
@@ -266,17 +267,24 @@ ul#menu li a:hover
 
 
 
-@media screen and (max-width: 700px){
+@media screen and (min-width: 400px) and (max-width: 700px){
   div#banner { display: block;
   margin-left:auto;
   margin-right:auto;
   width: 90%;
    }
+  body { height: 100%; display: flex; flex-direction:column;}
   ul#menu { margin-left:55px; }
   footer#footer {width: 100%;}
   h1 { text-align: center; }
   nav { margin-left:50px; }
   div#sidebar_container { margin-right:31px; }
-  footer#footer { width:880px; }
+  footer#footer { width:880px; bottom:0;  }
   footer#footer p { text-align: center; }
+}
+
+
+@media screen and (max-width: 400px){
+div#banner {margin-left:0; width:50%; } 
+
 }
