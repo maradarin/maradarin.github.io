@@ -267,7 +267,7 @@ ul#menu li a:hover
 
 
 
-@media screen and (min-width: 400px) and (max-width: 700px){
+@media screen and (max-width: 700px){
   div#banner { display: block;
   margin-left:auto;
   margin-right:auto;
@@ -279,12 +279,6 @@ ul#menu li a:hover
   h1 { text-align: center; }
   nav { margin-left:50px; }
   div#sidebar_container { margin-right:31px; }
-  footer#footer { width:880px; bottom:0;  }
+  footer#footer { width:880px; }
   footer#footer p { text-align: center; }
-}
-
-
-@media screen and (max-width: 400px){
-div#banner {margin-left:0; width:50%; } 
-
 }
