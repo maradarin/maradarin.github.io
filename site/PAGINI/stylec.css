@@ -395,7 +395,7 @@ section#banda p:first-of-type {
   width: 90%;
    }
   ul#menu { margin-left:55px; }
-  footer#footer {width: 100%;}
+  footer#footer {width: 100%; bottom:0;}
   h1 { margin-left: 60px; }
   div#content h1 { margin-left:50px; }
   section { margin-left:30px; }
