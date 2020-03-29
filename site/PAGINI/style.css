@@ -286,6 +286,6 @@ ul#menu { margin-left:200px; }
   h1 { text-align: center; }
   nav { margin-left:50px; }
   div#sidebar_container { margin-right:31px; }
-  footer#footer { width:880px}
+  footer#footer { width:880px; bottom: 0; position: fixed;}
   footer#footer p { text-align: center; }
 }
