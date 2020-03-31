@@ -116,7 +116,7 @@ ul#menu
   left:0;
   position: fixed;
   margin-top: 140px;
-  margin-left: 30%;
+  margin-left: 25%;
 }
 
 ul#menu li
@@ -138,17 +138,13 @@ ul#menu li a
   text-decoration: none;
   background-color: #5A5A5A; } 
 
-ul#menu li.selected a
-{ height: 20px;
-  padding: 6px 45px 5px 35px;}
-
-ul#menu li.selected
-{ margin: 1px 2px 0 0;
-  background: #E66810 ;}
-
-ul#menu li.selected a, ul#menu li.selected a:hover
-{
-background: #E66810 ;}
+#menu .dropdown::after, #menu li li .dropdown::after {position:absolute;}
+#menu .dropdown {padding-left:15px;}
+#menu li li a, #menu li li .dropdown {display:block; margin:0; padding:10px 15px;}
+#menu .dropdown::after {top:35px; left:5px;}
+#menu li li .dropdown::after {top:15px; left:5px;}
+#menu ul ul {visibility:hidden;}
+#menu ul li:hover > ul {visibility:visible;}
 
 ul#menu li.selectedd
 { margin: 1px 2px 0 0;
@@ -274,7 +270,9 @@ ul#menu li a:hover
 @media screen and (min-width: 740px) and (max-width: 1145px) {
 div#menubar {margin:0; width: 100%; display: grid;}
 ul#menu { margin:0; display:grid; grid-template-columns:auto auto auto auto auto; margin-top:138px; margin-left:10%;}
-ul#menu li a { padding: 6px 45px 8px 34px; }
+ul#menu li a { padding: 6px 30px 7px 30px; }
+#menu li li a {padding: 10px 20px 10px 20px;}
+#menu li li {width: 80%; background-color: #5A5A5A;}
 div#jos {display: flex; flex-direction: row-reverse;}
 div#site_content  { width: 100%; text-align: center; align-items: center; font-size: 1em; }
 .img-content { position: relative; }
@@ -287,7 +285,7 @@ footer#footer { display: grid; grid-template-rows: auto; }
 
 
 
-@media screen and (min-width: 450px) and (max-width: 739px){
+@media screen and (min-width: 450px) and (max-width: 740px){
   
 div#logo_text { margin:0; font-size: 0.9em;}
 div#logo { margin-bottom: 170px;}
@@ -295,7 +293,7 @@ div#site_content  { width: 100%; text-align: center; align-items: center; font-s
 div#content { width:100%; }
 div#menubar {margin:0; width: 100%; display: grid;}
 ul#menu { top:0; right:0; margin:0; font-size:1em; display:grid; grid-template-columns:160px; margin-left:72%;}
-ul#menu li a { padding: 6px 4px 7.8px 3px;  }
+ul#menu li a { padding: 6px 4px 7.4px 3px;  }
 .img-content { position: relative; }
 div#jos {display: flex; flex-direction: row-reverse;}
 div#sidebar_container { float:left; margin: 0; margin-left: 2%; margin-right:2%; }

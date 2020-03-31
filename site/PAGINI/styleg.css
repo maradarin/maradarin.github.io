@@ -253,7 +253,9 @@ ul#menu li a:hover
 @media screen and (min-width: 740px) and (max-width: 1145px) {
 div#menubar {margin:0; width: 100%; display: grid;}
 ul#menu { margin:0; display:grid; grid-template-columns:auto auto auto auto auto; margin-top:138px; margin-left:10%;}
-ul#menu li a { padding: 6px 45px 8px 34px; }
+ul#menu li a { padding: 6px 30px 7px 30px; }
+#menu li li a {padding: 10px 20px 10px 20px;}
+#menu li li {width: 80%; background-color: #5A5A5A;}
 div#jos {display: flex; flex-direction: row-reverse;}
 div#site_content  { width: 100%; text-align: center; align-items: center; font-size: 1em; }
 div#content { width:100%; }
