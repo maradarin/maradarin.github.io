@@ -138,13 +138,17 @@ ul#menu li a
   text-decoration: none;
   background-color: #5A5A5A; } 
 
-#menu .dropdown::after, #menu li li .dropdown::after {position:absolute;}
-#menu .dropdown {padding-left:15px;}
-#menu li li a, #menu li li .dropdown {display:block; margin:0; padding:10px 15px;}
-#menu .dropdown::after {top:35px; left:5px;}
-#menu li li .dropdown::after {top:15px; left:5px;}
-#menu ul ul {visibility:hidden;}
-#menu ul li:hover > ul {visibility:visible;}
+ul#menu li.selected a
+{ height: 20px;
+  padding: 6px 45px 5px 35px;}
+
+ul#menu li.selected
+{ margin: 1px 2px 0 0;
+  background: #E66810 ;}
+
+ul#menu li.selected a, ul#menu li.selected a:hover
+{
+background: #E66810 ;}
 
 ul#menu li.selectedd
 { margin: 1px 2px 0 0;
@@ -242,26 +246,7 @@ ul#menu li a:hover
   padding: 4px; 
   font: 100% arial, sans-serif;}
 
-.form_settings
-{ margin: 15px 0 0 0;}
-
-.form_settings p
-{ padding: 0 0 4px 0;}
-
-.form_settings span
-{ float: left; 
-  width: 200px; 
-  text-align: left;}
-
-.form_settings textarea, .form_settings select
-{ font: 100% arial; 
-  width: 299px;}
-
-.form_settings select
-{ width: 310px;}
-
 #drop {background-color: white;}
-
 
 
 
