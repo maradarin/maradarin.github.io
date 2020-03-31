@@ -18,7 +18,7 @@ img
 { border: 0;}
 
 .dropimg {
-  position: auto;
+  
   display: inline-block;
 }
 
@@ -401,7 +401,7 @@ div#site_content  { width: 100%; text-align: center; align-items: center; font-s
 div#content { width:100%; }
 div#content h1,h2,p,table { text-align:center; } 
 div#content table { margin-left:17%; }
-.form_settings p:nth-child(2) {display:flex; flex-direction:rows;}
+.form_settings p:nth-child(2) {display:flex; flex-direction:row;}
 .form_settings span {text-align:center;}
 div#drop { margin-top:33px; display: flex; position:absolute; left: 0; margin-left:36.5%; }
 div#sidebar_container {margin-left: 3%;}
