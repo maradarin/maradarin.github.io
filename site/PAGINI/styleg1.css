@@ -203,6 +203,8 @@ ul#menu li a:hover
 .sidebar li a.selected
 { color: #444;} 
 
+#search_form p {margin:0;}
+
 
 #data p { font-size: 20px; }
 
@@ -238,7 +240,8 @@ ul#menu li a:hover
 
 #footer p
 { line-height: 27px;
-  padding: 0 0 10px 0;}
+  padding: 0 0 10px 0;
+ margin-left: auto; margin-right:auto;}
 
 /*acopar link-urile, scot sublinierea si dau alta culoare*/
 #footer a
@@ -296,7 +299,6 @@ div#drop { margin-top:33px; display: flex; position:absolute; left: 0; margin-le
 div#sidebar_container {margin-left: 3%;}
 div#sidebar_container { float:left; margin:0; margin-right:2%; margin-left:3%;}
 footer#footer { display: grid; grid-template-rows: auto; }
-#footer p {margin-left: auto; margin-right:auto;}
 }
 
 
@@ -318,7 +320,6 @@ div#banner { width:100%; margin-top:155px;}
 #search_form p {margin:0;}
 .sidebar ul li { padding: 0 0 0 0; }
 footer#footer { display: grid; grid-template-rows: auto; }
-#footer p{margin-left:auto; margin-right:auto;}
 }
 
 @media screen and (max-width: 449px) {

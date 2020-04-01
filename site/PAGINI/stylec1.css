@@ -199,6 +199,7 @@ ul#menu li a:hover
 .sidebar li a.selected
 { color: #444;} 
 
+#search_form p {margin: 0;}
 
 #data p { font-size: 20px; }
 
@@ -446,7 +447,6 @@ ul#menu li.selected a { padding: 6px 4px 5px 4px; }
 div#jos {display: flex; flex-direction: column-reverse;}
 div#sidebar_container { float:left; margin: 0; margin-left: 20%; margin-top: 20%;}
 div#banner { width:100%; margin-top:155px;}
-.sidebar ul li { padding: 0 0 0 0; }
 footer#footer { display: grid; grid-template-rows: auto; }
 }
 
