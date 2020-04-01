@@ -303,12 +303,13 @@ ul#menu li a:hover
 @media screen and (min-width: 740px) and (max-width: 1145px) {
 div#menubar {margin:0; width: 100%; display: grid;}
 ul#menu { margin:0; display:grid; grid-template-columns:auto auto auto auto auto; margin-top:138px; margin-left:10%;}
-#services h2:first-child {margin-left:-50%;}
+#services h2:first-child {margin-left:-40%;}
 ul#menu li a { padding: 6px 30px 7px 30px; }
 #menu li li a {padding: 10px 20px 10px 20px;}
 #menu li li {width: 80%; background-color: #5A5A5A;}
 div#jos {display: flex; flex-direction: row-reverse;}
 div#site_content  { width: 100%; text-align: center; align-items: center; font-size: 1em; }
+.sidebar_item ul li {padding: 0 0 0 0;}
 .img-content { position: relative; }
 div#content { width:100%; }
 div#sidebar_container { float:left; margin: 0; margin-right:2%; }
@@ -347,7 +348,7 @@ footer#footer { display: grid; grid-template-rows: auto; }
 {
 #services article { margin-left:30%; }
 h2,p {margin-left: 41%;}
-#services h2:first-child, #services h2:first-child+p {margin-left:41%;}
+#services h2:first-child, #services h2:first-child+p {margin-left:60%;}
 #services ul { margin-left:25%;  grid-template-columns:350px;}
 #services h2, #services p {margin:0;}
 div#logo_text { margin:0; font-size: 0.9em;}

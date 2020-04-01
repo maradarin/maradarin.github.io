@@ -272,26 +272,28 @@ ul#menu li a:hover
 
 @media screen and (min-width: 740px) and (max-width: 1145px) {
 div#menubar {margin:0; width: 100%; display: grid;}
-ul#menu { margin:0; display:grid; grid-template-columns:auto auto auto auto auto; margin-top:138px; margin-left:9%;}
+ul#menu { margin:0; display:grid; grid-template-columns:auto auto auto auto auto; margin-top:138px; margin-left:10%;}
+#banner  {width:100%;}
 ul#menu li a { padding: 6px 30px 7px 30px; }
 #menu li li a {padding: 10px 20px 10px 20px;}
-#menu li li {width: 82%; background-color: #5A5A5A;}
+#menu li li {width: 80%; background-color: #5A5A5A;}
 ul#menu li.selected li > a {height:27px;}
 div#jos {display: flex; flex-direction: row-reverse;}
 div#site_content  { width: 100%; text-align: center; align-items: center; font-size: 1em; }
 div#content { width:100%;}
-div#content h1 { text-align:center; } 
+div#content h2 { text-align:center; } 
 div#content p { margin:0; margin-left:121px;}
-div#content img {margin: 0; margin-left:2%;}
+div#content img {margin: 0; margin-left:14%;}
 div#drop { margin-top:33px; display: flex; position:absolute; left: 0; margin-left:36.5%; }
-div#sidebar_container {margin-left: 3%;}
+div#sidebar_container {margin-left: 3%; margin-right:2%;}
+.img-content {position:relative;}
 footer#footer { display: grid; grid-template-rows: auto; }
 }
 
 
 
 
-@media screen and (min-width: 450px) and (max-width: 740px){
+@media screen and (min-width: 449px) and (max-width: 740px){
   
 div#logo_text { margin:0; font-size: 0.9em;}
 div#logo { margin-bottom: 170px;}
@@ -303,6 +305,7 @@ ul#menu li a { padding: 6px 4px 7.8px 3px;  }
 ul#menu li.selected a { padding: 6px 4px 5px 4px; }
 .img-content { position: relative; }
 div#jos {display: flex; flex-direction: column-reverse;}
+#content p {margin-right:2%;}
 div#sidebar_container { float:left; margin: 0; margin-left: 20%; margin-top: 20%;}
 div#banner { width:100%; margin-top:155px;}
 .sidebar ul li { padding: 0 0 0 0; }
@@ -318,6 +321,7 @@ div#content { top:0; width:100%; margin-top:300px;}
 div#menubar {margin:0; width: 100%; display: grid;}
 ul#menu { margin:0; font-size:1em; display:inline-grid; grid-template-columns:60vw;margin-left:20%;}
 ul#menu li a, ul#menu li.selected a { padding:10px 5px 5px 10px;}
+#content p {margin-right:2%;}
 div#jos {display: flex; flex-direction: column-reverse;}
 div#sidebar_container { float:left; margin-top: 30px; margin-left:18%;}
 ul#lista { margin-left:25%; }

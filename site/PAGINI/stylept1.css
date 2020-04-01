@@ -358,7 +358,8 @@ div#test ul { margin-left: 30%; display:grid; grid-template-columns: auto auto a
 nav {margin-left:35%;}
 div#sidebar_container { float:left; margin: 0; margin-right:2%; }
 div.sidebar_item li { padding: 0 0 0 0; }
-div#drop { margin-top:33px; display: flex; position:absolute; left: 0; margin-left:36.5%; }
+div#drop { margin-top:33px; display: flex; position:absolute; left: 0; margin-left:38%; }
+.img-content {position:relative;}
 footer#footer { margin-top:20px; display: grid; grid-template-rows: auto; }
 }
 
