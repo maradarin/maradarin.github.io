@@ -220,6 +220,8 @@ ul#menu li a:hover
   padding: 0 0 4px 25px;
   line-height: 24px;}
 
+div#content img {margin: 0; margin-left:auto; margin-right:auto; display: block;}
+
 #footer
 { width: 100%;
   font-family: 'trebuchet ms', sans-serif;
@@ -283,7 +285,6 @@ div#site_content  { width: 100%; text-align: center; align-items: center; font-s
 div#content { width:100%;}
 div#content h2 { text-align:center; } 
 div#content p { margin:0; margin-left:121px;}
-div#content img {margin: 0; margin-left:14%;}
 div#drop { margin-top:33px; display: flex; position:absolute; left: 0; margin-left:36.5%; }
 div#sidebar_container {margin-left: 3%; margin-right:2%;}
 .img-content {position:relative;}

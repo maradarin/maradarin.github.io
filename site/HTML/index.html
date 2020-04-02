@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-  <title>art_gallery</title>
+  <title>Art Blog</title>
   <meta charset="UTF-8">
-  <meta name="description" content="website description" />
+  <meta name = "author" content = "Mara Darin Agha">
+  <meta name="description" content="Art blog with a personal collection of artwork" />
   <meta name="keywords" content="digital, gallery, art, drawings" />
-  <link rel="stylesheet" type="text/css" href="stylept1.css" />
+  <link rel="stylesheet" type="text/css" href="../CSS/index.css">
   <link rel="shortcut icon" type="image/x-icon" href="../IMAGINI/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -24,13 +25,13 @@
       <div id="menubar">
         <ul id="menu">
           <!-- class="selected" in li ca sa stiu pe care pg ma aflu -->
-          <li><a href="index.html">Home</a></li>
-          <li class="selected"><a href="portofolio.html">Portofolio</a></li>
-          <li><a href="">Artistic Influence</a>
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li class="dropdown"><a href="">Artistic Influence</a>
 	<div id="drop">
 	<ul>
-		<li class="fara" title="ceva"><a href="artistp.html">Peter Paul Rubens</a></li>
-		<li class="fara" title="ceva"><a href="artistg.html">Gian Bernini</a></li>
+		<li><a href="artistp.html">Peter Paul Rubens</a></li>
+		<li><a href="artistg.html">Gian Bernini</a></li>
 	</ul>
 	</div>
           </li>
@@ -46,6 +47,7 @@
     <div id="site_content">
       <div id="banner"></div>
       <div id="jos">
+      <aside>
       <div id="sidebar_container">
 
         <div class="sidebar">
@@ -55,7 +57,7 @@
         <section id="banda">
             <h2>Latest Creations</h2>
             <p>New Comic Page</p>
-            <p>March 2nd, 2020</p>
+            <time datetime="2020-03-02">March 2nd, 2020</time>
 	<figure class="dropimg">
             <img src="../IMAGINI/cutu.jpg" alt="Preview" width="100" height="75">
 		<figure class="img-content">
@@ -96,52 +98,62 @@
         </div>
 
       </div> 
+     </aside>
 
       <div id="content">
         <!-- insert the page content here -->
       <nav>
-        
                <section>
 	<h2>Welcome to creativity's safe haven</h2>
-              	<section>
-        	<h2>Proof that anything is possible</h2>
-        	<p>Grace of a mermaid, the appeal of the rich, golden-encrusted baked potatoes recipe and the texture of an egg</p>
-        	<img src="../IMAGINI/cartof.jpg" alt="Preview" width="400" height="400">
-               	</section>
-               	<section>
-	<h2>An unexpected duo</h2>
-        	<p>Because even the hardest iron can be moulded by the warmest fire</p>
-        	<img src="../IMAGINI/duo.jpg" alt="Preview" width="250" height="400">
-               	</section>
-                </section>
+	<p> “Painting is poetry that is seen rather than felt, and poetry is painting that is felt rather than seen.”</p>
+	<p>― Leonardo da Vinci </p>
+	<p> How can one describe art? A work of art can be a painting, a drawing, a piece of music, a piece of theatre. A piece of art is anything that is a source of inspiration to others, something that can be heard in the depths of their bodies, right in the core of their person, where it resonates its deepest meaning. What that meaning is, is up to you. Art has the ability to express a thousand words in a second, and a hundred different stories can be heard in each note of a song. The arts are the result of us using the gift of imagination and rewarding it to the world for others to enjoy, as well as ourselves. Art is wholly and completely selfless, and because of this, it is utterly and shamelessly beautiful. <p>
+	<p> This blog serves to pull you out of the ordinary and walk you through each type of beauty: elegance, madness, balance, opulence, simplicity. <p>
+	<p> Enjoy your stay! </p>
+              </section>
+        
+<section id="services">
+      <h2 class="heading font-x3">Applications I use</h2>
+      <p>Because the way of projecting art is as important as art itself.</p>
+      <ul  id="grid_container">
+        <li>
+          <article><i class="fas fa-door-open fa-4x"></i>
+            <h2 class="heading">Photoshop</h2>
+            <p>Self-taught user of the most advanced tool that has been designed especially for delivering content in a visually pleasing and imposing manner.</p>
+          </article>
+        </li>
+        <li>
+          <article><i class="fas fa-dove fa-4x"></i>
+            <h2 class="heading">Picsart</h2>
+            <p>The finger is as efficient at drawing and editing as its lord, the hand. I do pride myself in being able to draw using a touchpad only.</p>
+          </article>
+        </li>
+        <li>
+          <article><i class="fas fa-marker fa-4x"></i>
+            <h2 class="heading">Pen & Paper</h2>
+            <p>Quite traditional, I know. And yet, why 2D Disney movies are the most magical and can no longer be reproduced with the same amount of emotion?</p>
+          </article>
+        </li>
+        <li>
+          <article><i class="fas fa-ribbon fa-4x"></i>
+            <h2 class="heading">PIXLR</h2>
+            <p>Easy application, basically a compressed version of Photoshop but it gets the job done effectively and without the risk of losing your projects.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+	
+        
       </nav>
-<div id="test">
-	<ul>
-  <li>
-    <span>Ceva</span>
-    <img src="../IMAGINI/starset2.jpg" alt="Starset" height="450"></li>
-  
-  <li>
-    <span>Ceva</span>
-   <img src="../IMAGINI/starset1.png" alt="abstract" height="450"></li>
-   
-  <li>
-    <span>Ceva</span>
-    <img src="../IMAGINI/starset3.jpg" alt="outer-space" height="450"></li>
-  
- <li>
-    <span>Ceva</span>
-    <img src="../IMAGINI/marte.jpg" alt="mars" height="450"></li>
-  
-</ul>
-</div>
     </div>
-   </div>
-  </div>
+
+</div>
+</div>
   </main>
     <footer id="footer">
       <p><a href="index.html">Home</a> | <a href="portofolio.html">Portofolio</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact Me</a> | <a href="#top">Top</a></p>
-     <ul class="faico clear">
+        <ul class="faico clear">
             <li><a class="faicon-facebook" href="https://www.facebook.com/maradarin5"><i class="fab fa-facebook"></i></a></li>
             <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
             <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>

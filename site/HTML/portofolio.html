@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>art_gallery</title>
+  <title>Collection of personal artwork</title>
   <meta charset="UTF-8">
   <meta name="description" content="website description" />
   <meta name="keywords" content="digital, gallery, art, drawings" />
-  <link rel="stylesheet" type="text/css" href="stylec1.css" />
+  <link rel="stylesheet" type="text/css" href="../CSS/stylept1.css">
   <link rel="shortcut icon" type="image/x-icon" href="../IMAGINI/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -25,17 +25,17 @@
         <ul id="menu">
           <!-- class="selected" in li ca sa stiu pe care pg ma aflu -->
           <li><a href="index.html">Home</a></li>
-          <li><a href="portofolio.html">Portofolio</a></li>
+          <li class="selected"><a href="portofolio.html">Portofolio</a></li>
           <li><a href="">Artistic Influence</a>
 	<div id="drop">
 	<ul>
-		<li class="fara" title="ceva"><a href="artistp.html">Peter Paul Rubens</a></li>
-		<li class="fara" title="ceva"><a href="artistg.html">Gian Bernini</a></li>
+		<li><a href="artistp.html">Peter Paul Rubens</a></li>
+		<li><a href="artistg.html">Gian Bernini</a></li>
 	</ul>
 	</div>
           </li>
           <li><a href="another_page.html">Demo</a></li>
-          <li class="selected"><a href="comenzi.html">Commisions</a></li>
+          <li><a href="comenzi.html">Commisions</a></li>
         </ul>
       </div>
     </div>
@@ -46,6 +46,7 @@
     <div id="site_content">
       <div id="banner"></div>
       <div id="jos">
+      <aside>
       <div id="sidebar_container">
 
         <div class="sidebar">
@@ -55,7 +56,7 @@
         <section id="banda">
             <h2>Latest Creations</h2>
             <p>New Comic Page</p>
-            <p>March 2nd, 2020</p>
+            <time datetime="2020-03-02">March 2nd, 2020</time>
 	<figure class="dropimg">
             <img src="../IMAGINI/cutu.jpg" alt="Preview" width="100" height="75">
 		<figure class="img-content">
@@ -96,38 +97,52 @@
         </div>
 
       </div> 
-
+      </aside>
       <div id="content">
         <!-- insert the page content here -->
-        <h1>PLACE AN ORDER</h1>
+      <nav>
+        
                <section>
-              	<h2> Right now, commisions are open! </h2>
-	<p> Check the prices below before filling out the form. </p>
-	     <table id="date">
-		<tr><th>Item</th><th>Pricing</th></tr>
-          		<tr><td>Sketch</td><td>5$</td></tr>
-         	 	<tr><td>Digital painting</td><td>10$</td></tr>
-          		<tr><td>Pencil drawing</td><td>15$</td></tr>
-          		<tr><td>Acryllic painting</td><td>20$</td></tr>
-        	     </table>
+	<h2>Welcome to creativity's safe haven</h2>
+              	<section>
+        	<h2>Proof that anything is possible</h2>
+        	<p>Grace of a mermaid, the appeal of the rich, golden-encrusted baked potatoes recipe and the texture of an egg</p>
+        	<img src="../IMAGINI/cartof.jpg" alt="Preview" width="400" height="400">
+               	</section>
+               	<section>
+	<h2>An unexpected duo</h2>
+        	<p>Because even the hardest iron can be moulded by the warmest fire</p>
+        	<img src="../IMAGINI/duo.jpg" alt="Preview" width="250" height="400">
+               	</section>
                 </section>
-                <form action="#" method="post">
-	<div class="form_settings">
-	    <p><span>Name</span><input type="text" name="name" value="" /></p>
-	    <p><span>E-mail </span><input type="text" name="name" value="" /></p>
-                       <p><span>Short description</span><textarea rows="8" cols="50" name="name"></textarea></p>
-                       <p><span>Checkbox example</span><input class="checkbox" type="checkbox" name="name" value="" /></p>
-                       <p><span>Item</span><select id="id" name="name"><option value="1">Sketch</option><option value="2">Digital painting</option><option value="3">Pencil drawing</option><option value="4">Acryllic painting</option></select></p>
-                       <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name" value="Place order" /></p>
-                   </div>
-                </form>
+      </nav>
+<div id="test">
+	<ul>
+  <li>
+    <span>Ceva</span>
+    <img src="../IMAGINI/starset2.jpg" alt="Starset" height="450"></li>
+  
+  <li>
+    <span>Ceva</span>
+   <img src="../IMAGINI/starset1.png" alt="abstract" height="450"></li>
+   
+  <li>
+    <span>Ceva</span>
+    <img src="../IMAGINI/starset3.jpg" alt="outer-space" height="450"></li>
+  
+ <li>
+    <span>Ceva</span>
+    <img src="../IMAGINI/marte.jpg" alt="mars" height="450"></li>
+  
+</ul>
+</div>
     </div>
-  </div>
+   </div>
   </div>
   </main>
     <footer id="footer">
       <p><a href="index.html">Home</a> | <a href="portofolio.html">Portofolio</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact Me</a> | <a href="#top">Top</a></p>
-    <ul class="faico clear">
+     <ul class="faico clear">
             <li><a class="faicon-facebook" href="https://www.facebook.com/maradarin5"><i class="fab fa-facebook"></i></a></li>
             <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
             <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
