@@ -1,0 +1,8 @@
+{"lastId":5,
+"colectie":[
+  {"id":1,"titlu":"Mona Lisa","artist":"Leonardo da Vinci","licitatie":false, "tip":"painting", "pret": 850, "year": 1506},
+  {"id":2,"titlu":"Valley of the Creuse at Fresselines","artist":"Claude Monet", "licitatie":true, "tip":"painting", "pret":1.94, "year":1889},
+  {"id":3,"titlu":"Guernica","artist":"Pablo Picasso","licitatie":true, "tip":"painting", "pret": 200, "year": 1937},
+  {"id":4,"titlu":"Starry night","artist":"Vincent van Gogh","licitatie":false,"tip":"painting", "pret": 100, "year": 1889},
+  {"id":5,"titlu":"The Thinker","artist":"Auguste Rodin","licitatie":true,"tip":"sculpture","poza":"thinker.jpg", "pret": 15, "year": 1902}
+]}

@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Art Blog</title>
+  <meta charset="UTF-8">
+  <meta name = "author" content = "Mara Darin Agha">
+  <meta name="description" content="Art blog with a personal collection of artwork" />
+  <meta name="keywords" content="digital, gallery, art, drawings" />
+  <link rel="stylesheet" type="text/css" href="css/styled.css">
+  <link rel="stylesheet" type="text/css" href="css/stylelog.css">
+  <link rel="shortcut icon" type="image/x-icon" href="IMAGINI/favicon.ico"/>
+  <script src="js/ejs.min.js"></script>
+  <script src="js/fsc.js"></script>
+	<script src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <%- include('../fragmente/headerd.ejs') %>
+  <main>
+    <div id="content_header"></div>
+
+    <div id="site_content">
+      <div id="banner"></div>
+      <div id="jos">
+      <aside>
+      <div id="sidebar_container">
+
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <!-- insert your sidebar items here -->
+        <section id="banda">
+            <h2>Latest Creations</h2>
+            <p>New Comic Page</p>
+            <time datetime="2020-03-02">March 2nd, 2020</time>
+	<figure class="dropimg">
+            <img src="/IMAGINI/cutu.jpg" alt="Preview" title="Banda desenata" width="100" height="75">
+		<figure class="img-content">
+		<img src="/IMAGINI/cutu.jpg" alt="Preview" title="Banda desenata" width="300" height="225">
+		</figure>
+	</figure>
+          </section>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">link 1</a></li>
+              <li><a href="#">link 2</a></li>
+              <li><a href="#">link 3</a></li>
+              <li><a href="#">link 4</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="../IMAGINI/search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+
+      </div> 
+     </aside>
+
+      <div id="content">
+        <!-- insert the page content here -->
+      <h1>Inregistrare utilizator</h1>
+        <p>Completati formularul pentru a va alatura comunitatii!:<br/></p>
+		<% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+		<form method="post" action="/inreg" class="date"> <!-- daca nu pun action atunci actionul default este pagina curenta -->
+			<p>
+			<label>
+				Username: <input type="text" name="username" value="prof123">
+			</label>
+			</p>
+			<p>
+			<label>
+				Nume: <input type="text" name="nume" value="Sever Examenescu">
+			</label>
+			</p>
+			<p>
+			<label>
+				Pictori/Sculptori favoriti(separati cu virgula): <input type="text" name="artisti" value="Picasso, Van Gogh" size="50">
+			</label>
+			</p>
+			<p>
+			<label>
+				Parola: <input type="password" name="parola" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				Reintroduceti parola: <input type="password" name="rparola" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				Email: <input type="text" name="email" value="profprofprof007@gmail.com"  size="50">
+			</label>
+			</p>
+
+			
+        		<p> Tipul abonamentului: </br> 
+         		 <label class="container">Gold
+            		<input checked="checked" name="gr_rad" value="1" type="radio"/>
+		<span class="checkmark"></span>
+          		</label>
+          		<label class="container">Silver
+            		<input checked="checked" name="gr_rad" value="2" type="radio"/>
+		<span class="checkmark"></span>
+         		 </label>
+         		 <label class="container">Bronze
+            		<input checked="checked" name="gr_rad" value="3" type="radio"/>
+		<span class="checkmark"></span>
+          		</label>
+              <label class="container">None, leave me alone
+            		<input checked="checked" name="gr_rad" value="4" type="radio"/>
+		<span class="checkmark"></span>
+          		</label>
+        		</p>
+      			
+
+			<p>		
+			<input type="submit" value="Submit">
+			</p>
+
+		</form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
+    </div>
+
+</div>
+</div>
+
+  <!--p>Continut JSON</p>
+		<!-- aici se va afisa continutul neprocesat al JSON-ului -->
+		<!--div class="afis" id="afisJson">
+    </div>
+		
+    <p>Cu template:</p-->
+    <div id="btn">
+    <select id="select" onchange="goSort()">
+      <option disabled selected value> Select an option for sorting </option>
+			<option value="year" id="btn3">Sort by year</option>
+			<option value="price" id="btn4">Sort by auction price</option>
+    </select>
+    <input type="button" id="btn1" value="Up for Auction">
+    <input type="button" id="btn2" value="Show All">
+    <input type="button" id="btn7" value="Delete piece">
+    <input type="button" id="btn5" value="Most expensive piece">
+    <input type="button" id="btn6" value="Cheapest piece">
+    <input type="text" class="myInput" onkeyup="cauta()" placeholder="Search for names..">
+    </div>
+		<div id="afisTemplate">
+    </div>
+  </main>
+    <%- include('../fragmente/footer.ejs') %>
+</body>
+</html>

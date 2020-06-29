@@ -1,0 +1,58 @@
+<header id="altceva">
+  <div id="main">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="/">Art<span class="logo_colour">Gallery</span></a></h1>
+          <h2>Cathartic. Contemporary. Creative.</h2>
+
+        </div>
+      </div>
+      
+      <div id="menubar">
+        <ul id="menu">
+          <!-- class="selected" in li ca sa stiu pe care pg ma aflu -->
+          <li><a href="/">Home</a></li>
+          <li><a href="/portofolio">Portofolio</a></li>
+          <li class="dropdown"><a href="">Artistic Influence</a>
+	<div id="drop">
+	<ul>
+		<li class="selected"><a href="/artistp">Peter Paul Rubens</a></li>
+		<li><a href="/artistg">Gian Bernini</a></li>
+	</ul>
+	</div>
+          </li>
+          <li><a href="/demo">Demo</a></li>
+          <li><a href="/comenzi">Commisions</a></li>
+          <li class="autent selected"><a href=""> Log in</a>
+          <div id="autentif">
+          <% if(!locals.username) { %>
+	<form method="post" action="/login" class="form-3">
+    <div class="clearfix">
+		<label class="user">
+				Username: <input type="text" name="username" value="">
+			</label>
+    </div>
+    <div class="clearfix">
+			<label class="parola">
+				Parola: <input type="password" name="parola" value="">
+			</label>
+    </div>
+    <div class="clearfix">
+        <input type="checkbox" name="remember" id="remember">
+        <label for="remember">Remember me</label>
+    </div>
+    <div>
+			<input type="submit" name="submit" value="Let me in">
+    </div>
+	</form>
+	<% } else { %>
+		Logat: <%= locals.username %>
+		<a href="/logout"> Logout</a>
+	<% } %>
+  </div>
+  </li>
+        </ul>
+      </div>
+    </div>
+  </header>

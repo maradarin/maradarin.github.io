@@ -47,6 +47,7 @@ img
 h1, h2, h3
 { font: normal 170% 'century gothic', arial;
   margin: 0 0 15px 0;
+  margin-left:15%;
   padding: 15px 0 5px 0;
   color: #000;}
 
@@ -92,26 +93,6 @@ a:hover
   width: 1100px;
   height: 300px;
   margin-bottom: 20px; }
-
-#services {margin-top: 10%;}
-#services li{margin-bottom:50px;margin-right:5%;}
-#services li:nth-last-child(4){margin-bottom:0;}
-#services li:first-of-type{margin-left:0; clear:left;margin-bottom:48px;}
-
-#services article
-{display:block;
-padding:30px 20px; 
-text-align:center;
-color:#474747;
-background-color:#FFFFFF;
-box-shadow:0px 0px 10px rgba(0,0,0,.1); }
-
-#services article i {margin-bottom:30px;}
-#services article p {margin-bottom:30px;}
-
-#services ul {margin:0;
-display: grid; grid-template-columns: 300px 300px; list-style-type:none;
-}
 
 
 #logo_text 
@@ -283,6 +264,178 @@ ul#menu li a:hover
 
 #drop {background-color: white;}
 
+div#content input[type=text], input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #E66810;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 6px;
+	left: 6.5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.afis{
+	border:2px solid skyblue;
+	padding:0.7em;
+}
+
+.templ_obiect{
+  width: 50%;
+  margin: 0 auto;
+	padding : 1em;
+  margin-bottom: 20px;
+  height: 400px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 5px 6px #0A0E28;
+
+  /* At the bottom of our background stack,
+     let's have a misty grey solid color */
+  background-color: #EEDC9A;
+
+  /* We stack linear gradients on top of each
+     other to create our color strip effect.
+     As you will notice, color gradients are
+     considered to be images and can be
+     manipulated as such */
+  background-image:
+  linear-gradient(175deg, rgba(0,0,0,0) 95%, #0A0E28 95%),
+  linear-gradient( 85deg, rgba(0,0,0,0) 95%, #0A0E28 95%),
+  linear-gradient(175deg, rgba(0,0,0,0) 90%, #2C3259 90%),
+  linear-gradient( 85deg, rgba(0,0,0,0) 92%, #2C3259 92%),
+  linear-gradient(175deg, rgba(0,0,0,0) 85%, #304A78 85%),
+  linear-gradient( 85deg, rgba(0,0,0,0) 89%, #304A78 89%),
+  linear-gradient(175deg, rgba(0,0,0,0) 80%, #2493A2 80%),
+  linear-gradient( 85deg, rgba(0,0,0,0) 86%, #2493A2 86%),
+  linear-gradient(175deg, rgba(0,0,0,0) 75%, #57BDA2 75%),
+  linear-gradient( 85deg, rgba(0,0,0,0) 83%, #57BDA2 83%),
+  linear-gradient(175deg, rgba(0,0,0,0) 70%, #DCB13C 70%),
+  linear-gradient( 85deg, rgba(0,0,0,0) 80%, #DCB13C 80%);
+}
+
+.myInput {
+  //background-image: url('IMAGINI/search.png');
+  margin-left: 10px;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 94%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+input#btn1, #btn_din {
+    margin-left: 10px;
+}
+
+input[type=button], .stil {
+    /* Width and position */
+    width: auto;
+    padding: 8px 5px;
+  
+    /* Styles */
+    border: 1px solid #0273dd; /* Fallback */
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 10px 10px rgba(255,255,255,0.1);
+    border-radius: 3px;
+    background: #E66810;
+    cursor:pointer;
+  
+    /* Font styles */
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.8);
+}
+
+input[type=button]:hover { 
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+input[type=button]:active { 
+    background: #287db5;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.6);
+    border-color: #000; /* Fallback */
+    border-color: rgba(0,0,0,0.9);
+}
+
+#select {
+  margin-left: 10px;
+  width: 98%;
+}
+
 .faico{margin:0; padding:0; list-style:none;}
 .faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
 .faico li:last-child{margin-right:0;}
@@ -322,7 +475,6 @@ footer#footer { display: grid; grid-template-rows: auto; }
 
 @media screen and (min-width: 600px) and (max-width: 740px){
 #services article { margin-left:30%; }
-h2,p {margin-left: 41%;}
 #services h2:first-child, #services h2:first-child+p {margin-left:41%;}
 #services ul { margin-left:25%;  grid-template-columns:350px 350px;}
 #services h2, #services p {margin:0;}
@@ -348,6 +500,7 @@ footer#footer { display: grid; grid-template-rows: auto; }
 {
 #services article { margin-left:30%; }
 h2,p {margin-left: 41%;}
+div#content p:first-of-type:nth-child(2) {margin-left:15%;}
 #services h2:first-child, #services h2:first-child+p {margin-left:60%;}
 #services ul { margin-left:25%;  grid-template-columns:350px;}
 #services h2, #services p {margin:0;}
@@ -355,6 +508,7 @@ div#logo_text { margin:0; font-size: 0.9em;}
 div#logo { margin-bottom: 170px;}
 div#site_content  { width: 100%; text-align: center; align-items: center; font-size: 1em; }
 div#content { width:100%; }
+form.date { margin-left: -41%; }
 div#menubar {margin:0; width: 100%; display: grid;}
 ul#menu { top:0; right:0; margin:0; font-size:1em; display:grid; grid-template-columns:160px; margin-left:72%;}
 ul#menu li a { padding: 6px 4px 7.4px 3px;  }
@@ -376,10 +530,11 @@ h2,p {margin-left: 5%;}
 div#main { display: grid; grid-template-rows:auto; margin:0;}
 div#logo_text { margin:0; }
 div#logo { margin-bottom: 100px;}
-div#site_content  { width: 100%; text-align: center; align-items: center; font-size: 1em; }
+div#site_content  { margin-top:100%; width: 100%; text-align: center; align-items: center; font-size: 1em; }
 div#content { width:100%; }
 div#menubar {margin:0; width: 100%; display: grid; margin-left:10%;}
-ul#menu { margin:0; font-size:1em; display:inline-grid; grid-template-columns:60vw; margin-left:20%;}
+ul#menu { margin:0; font-size:1em; display:inline-grid; grid-template-columns:60vw; margin-left:20%; top:0;}
+#logo_text h2, #logo_text h1 {display:none;}
 ul#menu li a { padding: 10px 5px 5px 10px;}
 div#jos {display: flex; flex-direction: column-reverse;}
 nav { top:0; margin-top: 300px; }

@@ -6,40 +6,14 @@
   <meta charset="UTF-8">
   <meta name="description" content="website description" />
   <meta name="keywords" content="digital, gallery, art, drawings" />
-  <link rel="stylesheet" type="text/css" href="../CSS/styleg1.css">
-  <link rel="shortcut icon" type="image/x-icon" href="../IMAGINI/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="css/styleg1.css">
+  <link rel="stylesheet" type="text/css" href="css/stylelog.css">
+  <link rel="shortcut icon" type="image/x-icon" href="IMAGINI/favicon.ico"/>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <header id="altceva">
-  <div id="main">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Art<span class="logo_colour">Gallery</span></a></h1>
-          <h2>Cathartic. Contemporary. Creative.</h2>
-        </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- class="selected" in li ca sa stiu pe care pg ma aflu -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portofolio.html">Portofolio</a></li>
-          <li class="selected"><a href="">Artistic Influence</a>
-	<div id="drop">
-	<ul>
-		<li class="selectedd"><a href="artistp.html">Peter Paul Rubens</a></li>
-		<li><a href="artistg.html">Gian Bernini</a></li>
-	</ul>
-	</div>
-          </li>
-          <li><a href="another_page.html">Demo</a></li>
-          <li><a href="comenzi.html">Commisions</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+  <%- include('../fragmente/headerag.ejs') %>
   <main>
     <div id="content_header"></div>
 
@@ -58,9 +32,9 @@
             <p>New Comic Page</p>
             <time datetime="2020-03-02">March 2nd, 2020</time>
 	<figure class="dropimg">
-            <img src="../IMAGINI/cutu.jpg" alt="Preview" title="Banda desenata" width="100" height="75">
+            <img src="IMAGINI/cutu.jpg" alt="Preview" title="Banda desenata" width="100" height="75">
 		<figure class="img-content">
-		<img src="../IMAGINI/cutu.jpg" alt="Preview" title="Banda desenata" width="300" height="225">
+		<img src="IMAGINI/cutu.jpg" alt="Preview" title="Banda desenata" width="300" height="225">
 		</figure>
 	</figure>
           </section>
@@ -89,7 +63,7 @@
             <form method="post" action="#" id="search_form">
               <p>
                 <input class="search" type="text" name="search_field" value="Enter keywords....." />
-                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="../IMAGINI/search.png" alt="Search" title="Search" />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="IMAGINI/search.png" alt="Search" title="Search" />
               </p>
             </form>
           </div>
@@ -105,21 +79,12 @@
 	<h2>Gian Lorenzo Bernini</h2>
               	<p>Adapting the classical grandeur of Renaissance sculpture and the dynamic energy of the Mannerist period, Bernini forged a new, distinctly Baroque conception for religious and historical sculpture, powerfully imbued with dramatic realism, stirring emotion and dynamic, theatrical compositions. Bernini's early sculpture groups and portraits manifest "a command of the human form in motion and a technical sophistication rivalled only by the greatest sculptors of classical antiquity." Moreover, Bernini possessed the ability to depict highly dramatic narratives with characters showing intense psychological states, but also to organize large-scale sculptural works that convey a magnificent grandeur.</p>
         	
-        	<img src="../IMAGINI/rape.jpg" alt="Preview" title="Persephone's kidnapping" width="300" height="500">
+        	<img src="IMAGINI/rape.jpg" alt="Preview" title="Persephone's kidnapping" width="300" height="500">
                 </section>
     </div>
   </div>
   </div>
   </main>
-    <footer id="footer">
-      <p><a href="index.html">Home</a> | <a href="portofolio.html">Portofolio</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.html">Contact Me</a> | <a href="#top">Top</a></p>
-      <ul class="faico clear">
-            <li><a class="faicon-facebook" href="https://www.facebook.com/maradarin5"><i class="fab fa-facebook"></i></a></li>
-            <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-            <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
-         </ul>
-    </footer>
+    <%- include('../fragmente/footer.ejs') %>
 </body>
 </html>
